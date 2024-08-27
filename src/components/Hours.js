@@ -1,13 +1,27 @@
 import React from 'react';
 
 const OfficeHours = () => {
+    const shelterHours = [
+        { day: "Monday", open: "10:00", close: "16:00" },
+        { day: "Tuesday", open: "10:00", close: "16:00" },
+        { day: "Wednesday", open: "10:00", close: "16:00" },
+        { day: "Thursday", open: "10:00", close: "16:00" },
+        { day: "Friday", open: "10:00", close: "16:00" },
+        { day: "Saturday", open: "9:00", close: "20:00" },
+        { day: "Sunday", open: "9:00", close: "20:00" },
+
+    ]
+
+    const today = new Date().toLocaleDateString('en-US', { weekday: 'long' });
+
+    const todayHours = shelterHours.find((day) => day.day === today);
+
   return (
-    <div>
-      <h2>Office Hours</h2>
-      <p>Monday to Friday: from 10:00 to 16:00 hours</p>
-      <p>Weekends: from 9:00 to 20:00 hours</p>
-      <p>React component by: Herbert Tamayo :-) </p>
-    </div>
+    <div id="hours">
+    <h2>Today's Office Hours</h2>
+    <p>{todayHours.day} {todayHours.open} - {todayHours.close}</p>
+    <h3>Coded by Herbert Tamayo ;-) </h3>
+</div>
   );
 };
 
