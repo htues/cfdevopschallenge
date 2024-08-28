@@ -36,3 +36,8 @@ You can use the following URLs for the images for pets created in the app:
 - https://raw.githubusercontent.com/GeekTrainer/pets-walkthrough/main/pics/roscoe.jpg
 - https://raw.githubusercontent.com/GeekTrainer/pets-walkthrough/main/pics/sammy.jpg
 - https://raw.githubusercontent.com/GeekTrainer/pets-walkthrough/main/pics/sushi.jpg
+
+
+## Proof of concepts:
+
+Here you can find a sequences of images during theexecution of each stage:
